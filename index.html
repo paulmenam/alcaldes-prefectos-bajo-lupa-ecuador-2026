@@ -1042,23 +1042,6 @@
 </script>
 
 <!-- GoatCounter: conteo de visitas (privacy-friendly, sin cookies) -->
-<script>
-  window.goatcounter = {
-    // Registra el dominio del sitio donde está embebida la app (vía iframe),
-    // para distinguir las visitas de cada sitio en el panel de GoatCounter.
-    path: function (p) {
-      try {
-        // Si está en un iframe, usa el dominio de la página contenedora.
-        var host = (window.top && window.top !== window && document.referrer)
-          ? new URL(document.referrer).host
-          : location.host;
-        return host + (p === '/' ? '' : p) + '/';
-      } catch (e) {
-        return location.host + p;
-      }
-    }
-  };
-</script>
 <script data-goatcounter="https://paulmenam.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
