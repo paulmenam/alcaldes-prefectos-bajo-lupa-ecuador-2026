@@ -969,9 +969,7 @@
       L = L.filter(function (d) { return tieneRegistro(d, tabActiva); });
     }
 
-    var conReg = L.filter(function (d) { return tieneRegistro(d, tabActiva); }).length;
-    $cnt.textContent = L.length + (L.length === 1 ? ' autoridad' : ' autoridades') +
-      ' · ' + conReg + ' con registros en esta sección';
+    $cnt.textContent = '';
 
     clear($out);
     if (!L.length) {
